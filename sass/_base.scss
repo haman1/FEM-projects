@@ -1,17 +1,16 @@
-//Colors
+// Colors
 
-//Primary
+// Primary
 
-$main-background: hsl(233, 47%, 7%);
-$card-background: hsl(244, 38%, 16%);
-$accent: hsl(277, 64%, 61%);
+$soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
 
 // Neutral
 
-$heading-stats: hsl(0, 0%, 100%);
-$main-paragraph: hsla(0, 0%, 100%, 0.75);
-$stat-headings: hsla(0, 0%, 100%, 0.6);
-
+$main : hsl(217, 54%, 11%);
+$card : hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
 
 *,
 *::before,
@@ -23,78 +22,19 @@ $stat-headings: hsla(0, 0%, 100%, 0.6);
 
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+   
 }
 
 body{
-    font-size: 1.5rem;
-    font-family: 'Inter', sans-serif;
-    background-color: $main-background;
+    background-color: $main;
     width: 90%;
     margin: auto;
     min-height: 100vh;
     margin-top: 5rem;
-
-}
-
-.container{
-    background-color: $card-background;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-}
-
-.img{
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    mix-blend-mode: multiply;
     display: flex;
-}
-.wrapper{
-    background-color: $accent;
-    border-radius: 1rem 1rem 0 0;
-}
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 1rem;
+    font-family: 'Outfit', sans-serif;
 
-h2{
-    font-weight: 700;
-    text-align: center;
-    font-size: 2.5rem;
-    padding:2.3rem;
-    color: $heading-stats;
-}
-span{
-    color: $accent;
-}
-
-p{
-    font-family: 'Lexend Deca';
-    font-weight: 400;
-    color:$main-paragraph;
-    text-align: center;
-    padding:2rem;
-    line-height: 2rem;
-    font-size: 2rem;
-}
-
-.stats{
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h3{
-    color: $heading-stats;
-    
-}
-h4{
-    color: $stat-headings;
-}
-li{
-    padding:1rem;
-}
-
-
-
-
-.attribution{
-    color: $heading-stats;
 }
