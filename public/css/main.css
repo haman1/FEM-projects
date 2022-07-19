@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, ::after {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
@@ -11,127 +9,72 @@ html {
 }
 
 body {
-  background-color: hsl(217deg, 54%, 11%);
-  width: 90%;
-  margin: auto;
-  min-height: 100vh;
-  margin-top: 5rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  max-width: 90rem;
+  height: 65rem;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: hsl(185deg, 75%, 39%);
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  border-radius: 1rem;
-  font-family: "Outfit", sans-serif;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  max-width: 35rem;
+  background-color: white;
+  max-width: 30rem;
+  height: 35rem;
+  overflow: hidden;
   margin: 0 auto;
   border-radius: 1rem;
-  background-color: hsl(216deg, 50%, 16%);
-  padding: 2rem;
-  min-height: 50rem;
 }
 
-.wrapper {
-  margin: 1rem;
-  position: relative;
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
-.wrapper .image {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  height: 25rem;
-  display: block;
-}
-.wrapper .img-overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: hsl(178deg, 100%, 50%);
-  opacity: 0;
-}
-.wrapper .img-overlay:hover {
-  opacity: 1;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-.wrapper .overlay {
-  position: absolute;
-  width: 5rem;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.title {
-  color: hsl(0deg, 0%, 100%);
-  font-weight: 700;
-}
-.title:hover {
-  color: hsl(178deg, 100%, 50%);
-  cursor: pointer;
-}
-
-.description {
-  color: hsl(215deg, 51%, 70%);
-  padding: 1.5rem 0;
-  font-size: 1.5rem;
-  line-height: 2rem;
+.img .image {
+  border-radius: 50rem;
+  border: 0.6rem solid #fff;
 }
 
 .info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid hsl(215deg, 32%, 27%);
-  padding: 1rem;
-}
-.info .et {
-  display: flex;
-  color: hsl(178deg, 100%, 50%);
-}
-.info .et h3 {
-  margin: 0.8rem;
-  font-weight: 700;
-}
-.info .et img {
-  padding-top: 0.5rem;
-  height: 20px;
-}
-.info .clock {
-  display: flex;
-  color: hsl(215deg, 51%, 70%);
-}
-.info .clock h3 {
-  margin: 0.8rem;
-  font-weight: 700;
-}
-.info .clock img {
-  height: 2.3rem;
-  padding-top: 0.3rem;
+  margin-top: -5rem;
 }
 
-.creator {
+.name-place {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  line-height: 2rem;
 }
-.creator img {
-  height: 4rem;
+.name-place p {
+  color: hsl(227deg, 10%, 46%);
 }
-.creator p {
-  color: hsl(215deg, 51%, 70%);
-  align-self: center;
-  margin-left: 5rem;
-  font-size: 1.5rem;
+
+span {
+  margin-left: 1rem;
+  color: hsl(227deg, 10%, 46%);
+  font-weight: 200;
 }
-.creator p .jules {
-  color: white;
-  font-weight: 400;
-  font-size: 1.5rem;
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid hsl(0deg, 0%, 59%);
+  padding: 1rem;
+  line-height: 1.7rem;
 }
-.creator p .jules:hover {
-  color: hsl(178deg, 100%, 50%);
-  cursor: pointer;
+.stats h3 {
+  font-size: 1.2rem;
+}
+.stats p {
+  color: hsl(227deg, 10%, 46%);
 }
