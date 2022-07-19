@@ -1,5 +1,5 @@
 {
-  "name": "nft-preview-card-component-main",
+  "name": "profile-card-component-main",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,5 @@
     "sass": "sass  --no-source-map sass:public/css -w"
   },
   "author": "ombasah",
-  "license": "ISC",
-  "dependencies": {
-    "sass": "^1.53.0"
-  }
+  "license": "ISC"
 }
